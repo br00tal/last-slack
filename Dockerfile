@@ -13,6 +13,7 @@ RUN apk add --no-cache curl \
   && rm -rf /root/.npm \
   && curl -LO https://github.com/jwilder/dockerize/releases/download/v0.5.0/dockerize-alpine-linux-amd64-v0.5.0.tar.gz \
   && tar xzf dockerize-alpine-linux-amd64-v0.5.0.tar.gz \
+  && rm -f dockerize-alpine-linux-amd64-v0.5.0.tar.gz \
   && apk del curl \
   git \
   gzip \
